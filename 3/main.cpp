@@ -6,7 +6,7 @@ using namespace std;
 
 string verifyCorrect(int result, int expected)
 {
-  return result == expected ? "acertou" : "errou";
+  return result == expected ? "acertou" : "errou, deu " + to_string(result) + ".";
 }
 
 int main()
@@ -19,4 +19,6 @@ int main()
   cout << verifyCorrect(solution->lengthOfLongestSubstring("bbbbb"), 1) << "2" << endl;
   cout << verifyCorrect(solution->lengthOfLongestSubstring("pwwkew"), 3) << "3" << endl;
   cout << verifyCorrect(solution->lengthOfLongestSubstring(" "), 1) << "4" << endl;
+  cout << verifyCorrect(solution->lengthOfLongestSubstring("au"), 2) << "5" << endl;
+  cout << verifyCorrect(solution->lengthOfLongestSubstring("aab"), 2) << "6" << endl;
 }
