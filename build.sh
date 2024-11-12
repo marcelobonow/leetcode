@@ -1,1 +1,1 @@
-g++ -std=c++17 2/main.cpp -o main && ./main
+g++ -std=c++17 3/main.cpp -o main && ./main
